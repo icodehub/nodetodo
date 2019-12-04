@@ -15,7 +15,7 @@ connection.once('open', function() {
 })
 
 // Import routes
-let apiRoutes = require("./routes/routes")// Use Api routes in the App
+let apiRoutes = require("./routes/routes") // Use Api routes in the App
 app.use('/api', apiRoutes)
 
 
