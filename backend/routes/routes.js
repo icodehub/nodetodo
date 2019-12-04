@@ -20,7 +20,5 @@ router.route('/todos/add')
     
 module.exports = router;
 
-
-
 // Export API routes
 module.exports = router;
