@@ -11,12 +11,17 @@ router.get('/', function (req, res) {
 
 // Import contact controller
 var todoListConroller = require('../controllers/todoListController');// Contact routes
+var authController = require('../controllers/authController');
 router.route('/todos')
     .get(todoListConroller.index)
 
 // Addding Toddo Data route
 router.route('/todos/add')
     .post(todoListConroller.add)
+
+//Authontication Route
+router.route('/auth/register')
+    .post(authController.register);
     
 module.exports = router;
 

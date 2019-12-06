@@ -16,7 +16,7 @@ connection.once('open', function() {
 
 // Import routes
 let apiRoutes = require("./routes/routes") // Use Api routes in the App
-app.use('/api', apiRoutes)
+app.use('/', apiRoutes)
 
 
 app.listen(PORT, function() {
